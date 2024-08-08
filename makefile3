@@ -1,0 +1,14 @@
+# Set gcc as the C++ compiler
+CXX=gcc
+
+
+# Enable all standard warnings, uninitialized variable warnings, 
+# and treat all warnings as errors
+CXXFLAGS=-Wall
+
+tokenring:
+	$(CC) tokenring.c $(CFLAGS) -o tokenring
+
+clean:
+	rm -rf tokenring
+	rm -rf pipe*
